@@ -1,0 +1,14 @@
+.u-text-clr {
+    // color: $clr-primary-green;
+    background-image: linear-gradient(to right, $clr-primary-green, $clr-light-purple);
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+.u-height-full {
+    height: 19.2rem !important;
+}
+
+.u-height-with-btn {
+    height: 28rem !important;
+}

@@ -1,0 +1,27 @@
+@mixin gradient {
+    background-image: linear-gradient(to right, $clr-primary-green, $clr-light-purple);
+}
+
+@mixin btn {
+    color: $clr-white;
+        padding: 2rem 4rem;
+        border-radius: 100px;
+        border: 2px solid $clr-primary-green;
+        position: relative;
+        overflow: hidden;
+        transition: all 400ms;
+        z-index: 1000;
+        font-size: 2rem;
+        text-transform: capitalize;
+        font-weight: 700;
+        @include gradient;
+
+        @media (max-width: 1600px) {
+          font-size: 2rem;
+        }
+
+        @media (max-width: 1500px) {
+          font-size: 1.7rem;
+          padding: 1.7rem 3rem;
+        }
+}
